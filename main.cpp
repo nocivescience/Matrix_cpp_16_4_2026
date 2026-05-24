@@ -45,7 +45,7 @@ int main() {
 
     // Rectángulo para el efecto de estela (Fade)
     sf::RectangleShape fadeRect(sf::Vector2f({(float)WINDOW_WIDTH, (float)WINDOW_HEIGHT}));
-    fadeRect.setFillColor(sf::Color(0, 0, 0, 40)); // El 40 es la opacidad (trail)
+    fadeRect.setFillColor(sf::Color(0, 0, 0, 10)); // El 40 es la opacidad (trail)
 
     while (window.isOpen()) {
         while (const std::optional event = window.pollEvent()) {
